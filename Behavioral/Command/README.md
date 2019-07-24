@@ -1,1 +1,2 @@
 [[https://github.com/pushkar4/DesignPatterns/blob/master/Behavioral/Command/command.jpg|alt=octocat]]
+![alt text](https://github.com/pushkar4/DesignPatterns/blob/master/Behavioral/Command/command.jpg)
