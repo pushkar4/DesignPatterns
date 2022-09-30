@@ -4,11 +4,10 @@
  */
 public class Task implements Runnable {
 
-	@Override
-	public void run() {
-		
-		Singleton instance = Singleton.getInstance();
-		instance.display();
-	}
+  @Override
+  public void run() {
 
+    Singleton instance = Singleton.getInstance();
+    instance.display();
+  }
 }

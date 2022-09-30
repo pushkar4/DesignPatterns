@@ -6,12 +6,11 @@ package receiver;
  */
 public class Light {
 
-	public void on() {
-		System.out.println("Light is glowing...");
-	}
+  public void on() {
+    System.out.println("Light is glowing...");
+  }
 
-	public void off() {
-		System.out.println("Light has been switched off.");
-	}
-
+  public void off() {
+    System.out.println("Light has been switched off.");
+  }
 }

@@ -5,24 +5,24 @@
  */
 public class Singleton {
 
-	public static Singleton instance;
-	public static Object lock = new Object();
-	
-	private Singleton() {}
-	
-	public static Singleton getInstance() {
-		
-		synchronized (lock) {
-			if(instance == null) {
-				instance = new Singleton();
-				System.out.println("Instance created.");
-			}
-		}
-		
-		return instance;
-	}
+  public static Singleton instance;
+  public static Object lock = new Object();
 
-	public void display() {
-		System.out.println("Singleton instance used.");
-	}
+  private Singleton() {}
+
+  public static Singleton getInstance() {
+
+    synchronized (lock) {
+      if (instance == null) {
+        instance = new Singleton();
+        System.out.println("Instance created.");
+      }
+    }
+
+    return instance;
+  }
+
+  public void display() {
+    System.out.println("Singleton instance used.");
+  }
 }

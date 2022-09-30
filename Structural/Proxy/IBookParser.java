@@ -1,13 +1,12 @@
-
 public interface IBookParser {
-	
-	// The methods listed here must be the same as those in the BookParser
 
-	public long getNumberOfPages();
-	
-	public long getNumberOfLines();
+  // The methods listed here must be the same as those in the BookParser
 
-	public long getNumberOfWords();
+  public long getNumberOfPages();
 
-	public long getNumberOfAdverbs();
+  public long getNumberOfLines();
+
+  public long getNumberOfWords();
+
+  public long getNumberOfAdverbs();
 }

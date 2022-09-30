@@ -6,6 +6,7 @@ package commands;
  */
 public interface ICommand {
 
-	public void execute();
-	public void unExecute();
+  public void execute();
+
+  public void unExecute();
 }

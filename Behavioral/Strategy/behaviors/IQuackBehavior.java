@@ -2,5 +2,5 @@ package behaviors;
 
 public interface IQuackBehavior {
 
-	public void quack();
+  public void quack();
 }

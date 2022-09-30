@@ -7,48 +7,52 @@ import products.Album;
  * This resource is now suitable to be used by a view.
  */
 public class AlbumResource implements IResource {
-	
-	Album album;
-	
-	public AlbumResource(Album album) {
-		this.album = album;
-	}
 
-	@Override
-	public String getName() {
-		return album.getName();
-	}
+  Album album;
 
-	@Override
-	public int getRating() {
-		return album.getRating();
-	}
+  public AlbumResource(Album album) {
+    this.album = album;
+  }
 
-	@Override
-	public int getSize() {
-		return album.getSize();
-	}
+  @Override
+  public String getName() {
+    return album.getName();
+  }
 
-	@Override
-	public String getDescription() {
-		return "Artist: " + album.getArtist() + 
-			"\nAbout: " + album.getDescription() +
-			"\nGenre: " + album.getGenre() +
-			"\nSongs: " + album.getNumSongs();
-	}
+  @Override
+  public int getRating() {
+    return album.getRating();
+  }
 
-	@Override
-	public int getVersion() {
-		return -1;
-	}
+  @Override
+  public int getSize() {
+    return album.getSize();
+  }
 
-	@Override
-	public String getOwner() {
-		return album.getPublisher();
-	}
+  @Override
+  public String getDescription() {
+    return "Artist: "
+        + album.getArtist()
+        + "\nAbout: "
+        + album.getDescription()
+        + "\nGenre: "
+        + album.getGenre()
+        + "\nSongs: "
+        + album.getNumSongs();
+  }
 
-	@Override
-	public float getPrice() {
-		return album.getPrice();
-	}
+  @Override
+  public int getVersion() {
+    return -1;
+  }
+
+  @Override
+  public String getOwner() {
+    return album.getPublisher();
+  }
+
+  @Override
+  public float getPrice() {
+    return album.getPrice();
+  }
 }

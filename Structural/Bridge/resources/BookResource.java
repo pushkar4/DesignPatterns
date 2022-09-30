@@ -7,48 +7,52 @@ import products.Book;
  * This resource is now suitable to be used by a view.
  */
 public class BookResource implements IResource {
-	
-	Book book;
-	
-	public BookResource(Book book) {
-		this.book = book;
-	}
 
-	@Override
-	public String getName() {
-		return book.getName();
-	}
+  Book book;
 
-	@Override
-	public int getRating() {
-		return book.getRating();
-	}
+  public BookResource(Book book) {
+    this.book = book;
+  }
 
-	@Override
-	public int getSize() {
-		return book.getSize();
-	}
+  @Override
+  public String getName() {
+    return book.getName();
+  }
 
-	@Override
-	public String getDescription() {
-		return "\nAuthor: " + book.getAuthor() + 
-			"\nAbout: " + book.getDescription() + 
-			"\nLanguage: " + book.getLanguage() + 
-			"\nPages: " + book.getPages();
-	}
+  @Override
+  public int getRating() {
+    return book.getRating();
+  }
 
-	@Override
-	public int getVersion() {
-		return -1;
-	}
+  @Override
+  public int getSize() {
+    return book.getSize();
+  }
 
-	@Override
-	public String getOwner() {
-		return book.getPublisher();
-	}
+  @Override
+  public String getDescription() {
+    return "\nAuthor: "
+        + book.getAuthor()
+        + "\nAbout: "
+        + book.getDescription()
+        + "\nLanguage: "
+        + book.getLanguage()
+        + "\nPages: "
+        + book.getPages();
+  }
 
-	@Override
-	public float getPrice() {
-		return book.getPrice();
-	}
+  @Override
+  public int getVersion() {
+    return -1;
+  }
+
+  @Override
+  public String getOwner() {
+    return book.getPublisher();
+  }
+
+  @Override
+  public float getPrice() {
+    return book.getPrice();
+  }
 }

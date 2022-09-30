@@ -7,45 +7,45 @@ import products.Game;
  * This resource is now suitable to be used by a view.
  */
 public class GameResource implements IResource {
-	
-	Game game;
-	
-	public GameResource(Game game) {
-		this.game = game;
-	}
 
-	@Override
-	public String getName() {
-		return game.getName();
-	}
+  Game game;
 
-	@Override
-	public int getRating() {
-		return game.getRating();
-	}
+  public GameResource(Game game) {
+    this.game = game;
+  }
 
-	@Override
-	public int getSize() {
-		return game.getSize();
-	}
+  @Override
+  public String getName() {
+    return game.getName();
+  }
 
-	@Override
-	public String getDescription() {
-		return game.getDescription();
-	}
+  @Override
+  public int getRating() {
+    return game.getRating();
+  }
 
-	@Override
-	public int getVersion() {
-		return game.getVersion();
-	}
+  @Override
+  public int getSize() {
+    return game.getSize();
+  }
 
-	@Override
-	public String getOwner() {
-		return game.getDeveloper();
-	}
+  @Override
+  public String getDescription() {
+    return game.getDescription();
+  }
 
-	@Override
-	public float getPrice() {
-		return game.getPrice();
-	}
+  @Override
+  public int getVersion() {
+    return game.getVersion();
+  }
+
+  @Override
+  public String getOwner() {
+    return game.getDeveloper();
+  }
+
+  @Override
+  public float getPrice() {
+    return game.getPrice();
+  }
 }
